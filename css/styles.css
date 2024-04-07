@@ -47,6 +47,8 @@ p {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -92,6 +94,7 @@ p {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-part {
@@ -157,6 +160,7 @@ p {
 .address-list {
   display: flex;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------------------------------ */
@@ -207,7 +211,7 @@ p {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   min-width: 169px;
   height: 56px;
-  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -271,6 +275,8 @@ p {
 .team-title-item {
   border-radius: 0 0 4px 4px;
   background: #fff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-item-description {
@@ -330,7 +336,7 @@ p {
 }
 
 .team-soc-link {
-  background-color: #404bbf;
+  background-color: #4d5ae5;
 }
 
 .team-soc-list {
@@ -358,10 +364,13 @@ p {
 
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .overlay-text {
   transform: translateY(0);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .overlay {
@@ -420,6 +429,7 @@ p {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-container {
@@ -465,12 +475,17 @@ p {
 }
 
 .footer-soc-link {
-  background-color: #404bbf;
+  background-color: #4d5ae5;
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .footer-soc-list {
